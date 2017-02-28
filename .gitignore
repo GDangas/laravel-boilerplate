@@ -1,0 +1,16 @@
+##Laravel default
+/public/storage
+/public/hot
+/storage/*.key
+/.idea
+.env
+
+##composer related
+/vendor
+
+##Project specific assets
+/gulp-automation/node_modules
+/public/css/
+/public/fonts/
+/public/img/
+/public/js/

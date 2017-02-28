@@ -1,0 +1,28 @@
+//Screen sizes
+$break-small: 767px;
+$break-medium: 992px;
+$break-large: 1200px;
+
+//Theme colors
+$color-bg: #f4f4f4;
+
+// Grays
+$color-black:                 #000;
+$color-grey:                  #555;
+$color-grey-darker:           lighten($color-grey, 13.5%); // #222
+$color-grey-dark:             lighten($color-grey, 20%);   // #333
+$color-grey-lightdark:        lighten($color-grey, 45%);   // #C8C8C8
+$color-grey-light:            lighten($color-grey, 60%);   // #999
+$color-grey-lighter:          lighten($color-grey, 63%); // #eee
+$color-white:                 #fff;
+$color-almost-white: #fcfcfc;
+$shadow-1: rgba(0, 0, 0, .2);
+$shadow-2: rgba(0, 0, 0, .19);
+
+//Theme fonts
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+$font-std: Open Sans;

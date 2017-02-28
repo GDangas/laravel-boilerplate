@@ -1,0 +1,17 @@
+// Variables
+@import 'variables';
+
+* {
+  font-family: $font-std;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+body {
+  background-color: $color-grey-lighter;
+}
+
+
