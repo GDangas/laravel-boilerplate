@@ -12,9 +12,9 @@
  * On deployment run "gulp build --production" to minify and uglify.
  *
  *
- * @version 0.2
+ * @version 0.3
  * @author  David Kangas, Elicit AB.
- * @updated 2017-02-28
+ * @updated 2017-10-13
  */
 
 var gulp = require('gulp'),
@@ -71,7 +71,7 @@ var externalJs = [
     //Bootstrap
     config.nodeDir + 'bootstrap/dist/js/bootstrap.min.js',
     //AdminLTE
-    config.nodeDir + 'admin-lte/dist/js/app.min.js'
+    config.nodeDir + 'admin-lte/dist/js/adminlte.js'
 ];
 
 //Add your assets here.
@@ -81,12 +81,12 @@ var externalSass = [
 //Add your assets here.
 var externalCss = [
     //Bootstrap
-    //config.nodeDir + 'bootstrap/dist/css/bootstrap.min.css',
-    //config.nodeDir + 'bootstrap/dist/css/bootstrap-theme.min.css',
-    config.nodeDir +  'admin-lte/bootstrap/css/bootstrap.min.css',
-    config.nodeDir +  'admin-lte/bootstrap/css/bootstrap-theme.min.css',
+    config.nodeDir + 'bootstrap/dist/css/bootstrap.css',
+    config.nodeDir + 'bootstrap/dist/css/bootstrap-theme.css',
+    //config.nodeDir +  'admin-lte/bootstrap/css/bootstrap.min.css',
+    //config.nodeDir +  'admin-lte/bootstrap/css/bootstrap-theme.min.css',
     //AdminLTE
-    config.nodeDir + 'admin-lte/dist/css/AdminLTE.min.css',
+    config.nodeDir + 'admin-lte/dist/css/AdminLTE.css',
     config.nodeDir + 'admin-lte/dist/css/skins/skin-blue-light.min.css',
     //FontAwesome
     config.nodeDir + 'font-awesome/css/font-awesome.min.css'
@@ -101,7 +101,7 @@ var plumberErrorHandler = { errorHandler: notify.onError({
 //See BrowserSync webpage for options.
 gulp.task('browser-sync', function() {
     browserSync.init({
-        proxy: "digiflow.app",
+        proxy: "afrikaswish.app",
         open: "local"
         //tunnel: "digiflow"
     });
