@@ -14,6 +14,13 @@ Det är .env-filen som styr Systemvariabler. Checka aldrig in din .env-fil!
 Installera Composer-dependencies med ```composer selfupdate``` följt av ```composer install```
 Detta kommer skapa upp mappen ```vendor``` med nödvändigt innehåll
 När du gör detta ska du stå i projekt-rooten där composer.json finns. 
+### Artisan
+Kör följande artisan-kommandon från din homestead-maskin från projekt-rooten:
+ 
+```php artisan key:generate``` och ```php artisan migrate```.
+
+Detta för att initiera projektspecifik nyckel samt köra migrationen som möjliggör autentisering (user och password-tabell).
+
 ### Installation av temaresurser
 För temats resurser och utveckling av dessa används Node, Npm & Gulp.
 Allt relaterat till detta ligger i mappen ```gulp-automation```. 
